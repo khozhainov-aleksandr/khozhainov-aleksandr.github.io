@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wrapper input {
+  display: none;
+}
+
+.wrapper input#section1:checked ~ nav label[for='section1'],
+.wrapper input#section2:checked ~ nav label[for='section2'],
+.wrapper input#section3:checked ~ nav label[for='section3'],
+.wrapper input#section4:checked ~ nav label[for='section4'],
+.wrapper input#section5:checked ~ nav label[for='section5'],
+.wrapper input#section6:checked ~ nav label[for='section6'],
+.wrapper input#section7:checked ~ nav label[for='section7'],
+.wrapper input#section8:checked ~ nav label[for='section8'],
+.wrapper input#section9:checked ~ nav label[for='section9'],
+.wrapper input#section10:checked ~ nav label[for='section10'] {
+  background-color: #fff;
+}
+
+.wrapper input#section1:checked ~ section:nth-of-type(1),
+.wrapper input#section2:checked ~ section:nth-of-type(2),
+.wrapper input#section3:checked ~ section:nth-of-type(3),
+.wrapper input#section4:checked ~ section:nth-of-type(4),
+.wrapper input#section5:checked ~ section:nth-of-type(5),
+.wrapper input#section6:checked ~ section:nth-of-type(6),
+.wrapper input#section7:checked ~ section:nth-of-type(7),
+.wrapper input#section8:checked ~ section:nth-of-type(8),
+.wrapper input#section9:checked ~ section:nth-of-type(9),
+.wrapper input#section10:checked ~ section:nth-of-type(10) {
+  top: 0;
+  transition: 0.8s ease;
+  z-index: 1;
+}
+
+.wrapper input#section1:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section2:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section3:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section4:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section5:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section6:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section7:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section8:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section9:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper input#section10:checked ~ .cover {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper nav {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.wrapper nav label {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 15px 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wrapper nav label:hover {
+  background-color: #fff;
+}
+
+.wrapper section {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-delay: 0.5s;
+}
+
+.wrapper section:nth-of-type(1) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(2) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(3) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(4) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(5) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(6) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(7) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(8) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(9) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section:nth-of-type(10) {
+  background: linear-gradient(0deg, #1500d1, #00ffff, #1500d1);
+}
+
+.wrapper section h2 {
+  padding: 20px 0 20px 0;
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 10px #000000;
+}
+
+.wrapper section img {
+  width: 75%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.wrapper section .button_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  padding-top: 10px;
+}
+
+.wrapper section .button_wrapper a {
+  color: red;
+  background: #fff;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px 15px;
+  margin-top: 20px;
+  text-decoration: none;
+  border: 1px solid red;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper section .button_wrapper a:hover {
+  color: white;
+  background: #e20000;
+  border: 1px solid white;
+  box-shadow: 1px 1px 30px #000000;
+}
+
+.wrapper .cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper section img {
+    width: 75%;
+  }
+  .wrapper section .button_wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper section h2 {
+    padding: 100px 0 140px 0;
+  }
+  .wrapper section img {
+    width: 75%;
+  }
+  .wrapper section .button_wrapper {
+    width: 75%;
+    padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper nav {
+    right: 25px;
+  }
+  .wrapper section h2 {
+    font-size: 40px;
+  }
+  .wrapper section img {
+    width: 70%;
+  }
+  .wrapper section .button_wrapper {
+    width: 70%;
+    flex-direction: column;
+  }
+  .wrapper section .button_wrapper a {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper nav {
+    right: 20px;
+  }
+  .wrapper section h2 {
+    font-size: 30px;
+    padding: 80px 0 80px 0;
+  }
+  .wrapper section img {
+    width: 70%;
+    height: 220px;
+  }
+  .wrapper section .button_wrapper a {
+    font-size: 20px;
+    padding: 15px 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper section h2 {
+    font-size: 25px;
+    padding: 70px 0 60px 0;
+  }
+  .wrapper section img {
+    width: 65%;
+    height: 240px;
+  }
+  .wrapper section .button_wrapper {
+    width: 65%;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper section h2 {
+    padding: 50px 0 40px 0;
+  }
+  .wrapper section img {
+    width: 60%;
+    height: 200px;
+  }
+  .wrapper section .button_wrapper {
+    width: 60%;
+    padding-top: 40px;
+  }
+}

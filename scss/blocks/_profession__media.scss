@@ -1,0 +1,58 @@
+@media screen and (max-width: 1140px) {
+    .profession__wrapper {
+
+        h1 {
+            font-size: 75px;
+        }
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .profession__wrapper {
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profession__wrapper {
+
+        h1 {
+            font-size: 90px;
+            text-align: center;
+            line-height: 1.2;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .profession__wrapper {
+
+        h1 {
+            font-size: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .profession__wrapper {
+
+        h1 {
+            top: 70px;
+            font-size: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .profession__wrapper {
+
+        h1 {
+            top: 130px;
+            font-size: 40px;
+            font-weight: 600;
+        }
+    }
+}

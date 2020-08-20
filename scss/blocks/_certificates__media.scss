@@ -1,0 +1,156 @@
+@media screen and (max-width: 1440px) {
+    .overlay {
+        .card__wrapper {
+            top: 340vh;
+        }
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .overlay {
+        .card__wrapper {
+            top: 385vh;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certificates__wrapper_button {
+        font-size: 65px;
+    }
+
+    .overlay {
+        .card__wrapper {
+            top: 380vh;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .overlay {
+        .card__wrapper {
+            top: 393vh;
+            padding: 250px 0;
+
+            .card {
+                width: 90%;
+                height: 80%;
+
+                .back {
+                    .content {
+                        h3 {
+                            padding: 30px 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .certificates__wrapper_button {
+        font-size: 50px;
+    }
+
+    .overlay {
+        .card__wrapper {
+            top: 397vh;
+            padding: 200px 0;
+
+            .card {
+                .back {
+                    .content {
+                        h3 {
+                            padding: 10px 0 0 0;
+                        }
+
+                        p {
+                            padding: 20px 15px;
+                        }
+
+                        a {
+                            bottom: 20px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .overlay {
+        .card__wrapper {
+            top: 420vh;
+            padding: 200px 0;
+
+            .card {
+                height: 85%;
+
+                .back {
+                    .content {
+                        h3 {
+                            padding: 0;
+                        }
+
+                        p {
+                            padding: 10px 5px;
+                        }
+
+                        a {
+                            bottom: 10px;
+                            padding: 10px 0;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .overlay {
+        .card__wrapper {
+            top: 444vh;
+
+            .card {
+                height: 90%;
+
+                .back {
+                    .content {
+                        a {
+                            padding: 12px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .certificates__wrapper_button {
+        font-size: 40px;
+    }
+
+    .overlay {
+        .card__wrapper {
+            top: 460vh;
+
+            .card {
+
+                .back {
+                    .content {
+                        a {
+                            padding: 12px 0;
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

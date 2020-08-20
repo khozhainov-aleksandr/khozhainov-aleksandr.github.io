@@ -1,0 +1,33 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid $neon;
+}
+
+.footer__wrapper {
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            color: rgb(0, 200, 180);
+			padding: 10px;
+			font-size: 16px;
+			font-weight: 300;
+			text-align: center;
+
+            &:nth-child(1) {
+                padding-top: 20px;
+            }
+
+            &:nth-child(4) {
+                padding-bottom: 20px;
+            }
+
+            span {
+                color: rgb(200, 0, 0);
+            }
+        }
+    }
+}

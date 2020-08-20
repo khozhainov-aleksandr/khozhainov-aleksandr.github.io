@@ -1,0 +1,60 @@
+// @import '/css/reset.scss'
+
+// ------ >->->->->->->->->->->      END      <-<-<-<-<-<-<-<-<-<-< ------ !!!!!
+
+$border: 5px;
+$dark: #333;
+$neon: #1bffff;
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: linear-gradient(#000, #01042d);
+}
+
+
+@import 'base/animations';
+
+@import 'blocks/page_scroll';
+
+@import 'blocks/header';
+@import 'blocks/header__media';
+
+@import 'blocks/profession';
+@import 'blocks/profession__media';
+
+@import 'blocks/experience';
+@import 'blocks/experience__media';
+
+@import 'blocks/skills';
+@import 'blocks/skills__media';
+
+@import 'blocks/additional_skills';
+@import 'blocks/additional_skills__media';
+
+@import 'blocks/certificates';
+@import 'blocks/certificates__media';
+
+@import 'blocks/portfolio';
+@import 'blocks/portfolio__media';
+
+@import 'blocks/magic_library';
+@import 'blocks/magic_library__media';
+
+@import 'blocks/contacts';
+@import 'blocks/contacts__media';
+
+@import 'blocks/footer';
+@import 'blocks/footer__media';
+
+@import 'blocks/pageup';
+@import 'blocks/pageup__media';

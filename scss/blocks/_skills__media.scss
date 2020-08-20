@@ -1,0 +1,35 @@
+@media screen and (max-width: 1000px) {
+    .skills__wrapper {
+        fieldset {
+            .progress {
+                &:nth-child(4) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skills__wrapper {
+        fieldset {
+            .progress {
+                &:nth-child(2) {
+                    margin-top: 33px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .skills__wrapper {
+        fieldset {
+            .progress {
+                &:nth-child(4) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
