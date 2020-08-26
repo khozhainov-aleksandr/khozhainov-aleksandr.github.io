@@ -237,7 +237,7 @@
     <section id="certificate" class="certificates_section">
       <div class="container">
         <div class="certificates__wrapper wow rubberBand" data-wow-duration="4s" dada-wow-delay="3s">
-          <button data-modal="certificates" class="certificates__wrapper_button">
+          <button id="certificates-button-open"class="certificates__wrapper_button">
             <span class="certificates__wrapper_span"></span>
             <span class="certificates__wrapper_span"></span>
             <span class="certificates__wrapper_span"></span>
@@ -248,7 +248,7 @@
 
         <!-- Pop-Up Modals -->
         <div class="overlay">
-          <div class="overlay_close">
+          <div id="certificates-button-close" class="overlay_close">
             <img src="./icons/close.svg" alt="Overlay Close Window">
           </div>
 
@@ -361,7 +361,7 @@
                   <h2>01</h2>
                   <h3>Active Box</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil quis maiores neque laudantium, architecto sequi iure corporis, quo quos, laboriosam quibusdam ducimus voluptatem debitis accusantium magnam minus nostrum ipsum.</p>
-                  <button data-modal="portfolio_01">Show More</button>
+                  <button class="open-portfolio-button">Show More</button>
                 </div>
               </div>
             </div>
@@ -372,7 +372,7 @@
                   <h2>02</h2>
                   <h3>V Klinik</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil quis maiores neque laudantium, architecto sequi iure corporis, quo quos, laboriosam quibusdam ducimus voluptatem debitis accusantium magnam minus nostrum ipsum.</p>
-                  <button data-modal="portfolio_02">Show More</button>
+                  <button class="open-portfolio-button">Show More</button>
                 </div>
               </div>
             </div>
@@ -383,7 +383,7 @@
                   <h2>03</h2>
                   <h3>Uber Partners</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil quis maiores neque laudantium, architecto sequi iure corporis, quo quos, laboriosam quibusdam ducimus voluptatem debitis accusantium magnam minus nostrum ipsum.</p>
-                  <button data-modal="portfolio_03">Show More</button>
+                  <button class="open-portfolio-button">Show More</button>
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@
                   <h2>04</h2>
                   <h3>Pulse</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil quis maiores neque laudantium, architecto sequi iure corporis, quo quos, laboriosam quibusdam ducimus voluptatem debitis accusantium magnam minus nostrum ipsum.</p>
-                  <button data-modal="portfolio_04">Show More</button>
+                  <button class="open-portfolio-button">Show More</button>
                 </div>
               </div>
             </div>
@@ -405,7 +405,7 @@
                   <h2>05</h2>
                   <h3>NETCLICKS</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil quis maiores neque laudantium, architecto sequi iure corporis, quo quos, laboriosam quibusdam ducimus voluptatem debitis accusantium magnam minus nostrum ipsum.</p>
-                  <button data-modal="portfolio_05">Show More</button>
+                  <button class="open-portfolio-button">Show More</button>
                 </div>
               </div>
             </div>
@@ -413,8 +413,8 @@
           </div>
 
           <!-- - Pop-Up Modals (Portfolio #01) -->
-          <div class="overlay_portfolio over-port-01">
-            <div class="overlay_close_portfolio">
+          <div class="overlay_portfolio open-overlay-window">
+            <div class="overlay_close_portfolio portfolio-button-close">
               <img src="./icons/close.svg" alt="Overlay Close Window">
             </div>
             <div class="card__wrapper">
@@ -426,8 +426,8 @@
           <!-- Pop-Up Modals (Portfolio #01) / END -->
 
           <!-- - Pop-Up Modals (Portfolio #02) -->
-          <div class="overlay_portfolio over-port-02">
-            <div class="overlay_close_portfolio">
+          <div class="overlay_portfolio open-overlay-window">
+            <div class="overlay_close_portfolio portfolio-button-close">
               <img src="./icons/close.svg" alt="Overlay Close Window">
             </div>
             <div class="card__wrapper">
@@ -439,8 +439,8 @@
           <!-- Pop-Up Modals (Portfolio #02) / END -->
 
           <!-- - Pop-Up Modals (Portfolio #03) -->
-          <div class="overlay_portfolio over-port-03">
-            <div class="overlay_close_portfolio">
+          <div class="overlay_portfolio open-overlay-window">
+            <div class="overlay_close_portfolio portfolio-button-close">
               <img src="./icons/close.svg" alt="Overlay Close Window">
             </div>
             <div class="card__wrapper">
@@ -452,8 +452,8 @@
           <!-- Pop-Up Modals (Portfolio #03) / END -->
 
           <!-- - Pop-Up Modals (Portfolio #04) -->
-          <div class="overlay_portfolio over-port-04">
-            <div class="overlay_close_portfolio">
+          <div class="overlay_portfolio open-overlay-window">
+            <div class="overlay_close_portfolio portfolio-button-close">
               <img src="./icons/close.svg" alt="Overlay Close Window">
             </div>
             <div class="card__wrapper">
@@ -465,8 +465,8 @@
           <!-- Pop-Up Modals (Portfolio #04) / END -->
 
           <!-- - Pop-Up Modals (Portfolio #05) -->
-          <div class="overlay_portfolio over-port-05">
-            <div class="overlay_close_portfolio">
+          <div class="overlay_portfolio open-overlay-window">
+            <div class="overlay_close_portfolio portfolio-button-close">
               <img src="./icons/close.svg" alt="Overlay Close Window">
             </div>
             <div class="card__wrapper">
