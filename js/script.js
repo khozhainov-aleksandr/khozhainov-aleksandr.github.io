@@ -1,9 +1,8 @@
-// WOW library
+// * WOW library *
 new WOW().init();
-// End.
 
 $(document).ready(function () {
-  // >>>>>>> Slick slider <<<<<<<
+  // * Slick slider *
   $('.cover').slick({
     infinite: true,
 
@@ -35,40 +34,36 @@ $(document).ready(function () {
       },
     ],
   });
-  // - >>>>> Comment section END <<<<< -
 
-  // >>>>>>> Animation Scroll Page <<<<<<<
+  // * Animation Scroll Page *
   $("a[href^='#']").click(function () {
     const _href = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
     return false;
   });
-  // - >>>>> Comment section END <<<<< -
 });
 
 $(window).scroll(function () {
-  // >>>>> Fixing the Top Header <<<<<
+  // * Fixing the Top Header *
   var header = document.querySelector('.top_header');
   if (window.pageYOffset > 640) {
     header.classList.add('header_fixed');
   } else {
     header.classList.remove('header_fixed');
   }
-  // - >>>>> Comment section END <<<<< -
 
-  // >>>>> Parallax <<<<<
+  // * Parallax *
   var section = $('.profession__wrapper').offset(),
     wScroll = $(this).scrollTop();
 
   $('.profession__wrapper h1').css({
     transform: 'translate(0, ' + (wScroll - section.top) / 24 + '%)',
   });
-  // - >>>>> Comment section END <<<<< -
 });
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Vanilla JavaScript <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// +++ Vanilla JavaScript +++
 
-// >>>>> Page Scroll <<<<<
+// * Page Scroll *
 let progress = document.getElementById('progressbar');
 let totalHeight = document.body.scrollHeight - window.innerHeight;
 
@@ -76,9 +71,9 @@ window.onscroll = function () {
   let progressHeight = (window.pageYOffset / totalHeight) * 100;
   progress.style.height = progressHeight + '%';
 };
-// >>>>> Page Scroll <<<<<
+// * Page Scroll *
 
-// >>>>> Experience <<<<<
+// * Experience *
 function CountUp(initDate, id) {
   this.beginDate = new Date(initDate);
   this.countainer = document.getElementById(id);
@@ -193,12 +188,11 @@ CountUp.prototype.updateCounter = function () {
 
 window.onload = function () {
   new CountUp('08 09 2019 19:00:00', 'counter');
-}; // - Start Time
-// - >>>>> Comment section END <<<<< -
+}; // . Start Time
 
-//! My Script !
+// ! My Script !
 
-// Arrow button, move page to top.
+// * Arrow button, move page to top *
 let scrollButtonToTop = document.querySelector('.page_up__arrow');
 
 window.onscroll = function () {
@@ -214,21 +208,13 @@ scrollButtonToTop.onclick = function () {
 };
 // End.
 
-// Pop-Up Certificate (Open and Close)
-// Pop-Up Portfolio (Open and Close)
+// * Pop-Up Certificate (Open and Close) *
 const certifyBtnOpenEl = document.querySelector('#certificates-button-open');
 const certifyBtnCloseEl = document.querySelector('#certificates-button-close');
 const overlayCertifyEl = document.querySelector('.overlay');
 
-const openPortBtnEl = document.querySelector('.open-portfolio-button');
-const closePortBtnEl = document.querySelector('.portfolio-button-close');
-const openOverWindowEl = document.querySelector('.open-overlay-window');
-
 certifyBtnOpenEl.addEventListener('click', onOpenCertifyWindow);
 certifyBtnCloseEl.addEventListener('click', onCloseCertifyWindow);
-
-openPortBtnEl.addEventListener('click', onOpenPortProject);
-closePortBtnEl.addEventListener('click', onClosePortProject);
 
 function onOpenCertifyWindow() {
   overlayCertifyEl.style = 'display: block';
@@ -237,13 +223,38 @@ function onOpenCertifyWindow() {
 function onCloseCertifyWindow() {
   overlayCertifyEl.style = 'display: none';
 }
+// End.
 
-function onOpenPortProject() {
-  openOverWindowEl.style = 'display: block';
+// * Pop-Up Portfolio (Open and Close) *
+const portWrapEl = document.querySelector('.portfolio__wrapper');
+const openPortBtnEl = document.querySelectorAll('.open-portfolio-button');
+const overWindowEl = document.querySelectorAll('.overlay-window');
+const closePortBtnEl = document.querySelector('.portfolio-button-close');
+
+portWrapEl.addEventListener('click', onClickPortBtn);
+
+function onClickPortBtn(event) {
+  const target = event.target;
+  if (target && target.classList.contains('open-portfolio-button')) {
+    openPortBtnEl.forEach((item, i) => {
+      if (target === item) {
+        showPortContent(i);
+      }
+    });
+  } else if (target && target.classList.contains('portfolio-button-close')) {
+    hidePortContent();
+  }
 }
 
-function onClosePortProject() {
-  openOverWindowEl.style = 'display: none';
+function hidePortContent() {
+  overWindowEl.forEach((item) => {
+    item.classList.add('hide_pop-up');
+    item.classList.remove('show_pop-up', 'fade');
+  });
 }
 
+function showPortContent(i) {
+  overWindowEl[i].classList.add('show_pop-up', 'fade');
+  overWindowEl[i].classList.remove('hide_pop-up');
+}
 // End.
