@@ -1,0 +1,39 @@
+@media screen and (max-width: 815px) {
+	.advantages {
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 35px;
+		}
+
+		&__item {
+			max-width: 80%;
+			margin-top: 25px;
+		}
+
+		&__subtitle {
+			margin-top: 5px;
+		}
+
+		&__descr {
+			margin-top: 10px;
+		}
+
+		&__icon_animated {
+			animation: none;
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.advantages{
+
+		.title {
+			font-size: 32px;
+		}
+
+		&__item {
+			max-width: 90%;
+		}
+	}
+}

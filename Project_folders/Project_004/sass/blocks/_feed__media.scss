@@ -1,0 +1,53 @@
+@media screen and (max-width:650px) {
+	.feed {
+		&__item {
+			flex-direction: column;
+		}
+
+		&__img {
+			margin: 25px auto;
+		}
+
+		&__text {
+			text-align: center;
+			margin-left: 40px;
+			padding-right: 40px;
+		}
+	}
+}
+
+@media screen and (max-width:425px) {
+	.feed {
+		&__text {
+			margin-left: 25px;
+			padding-right: 25px;
+		}
+	}
+}
+
+@media screen and (max-width:375px) {
+	.feed {
+		&__img {
+			margin: 10px auto 20px auto;
+			width: 60%;
+			height: 60%;
+		}
+
+		&__text {
+			margin-left: 5px;
+			padding-right: 5px;
+		}
+	}
+}
+
+@media screen and (max-width:320px) {
+	.feed {
+		.title {
+			font-size: 27px;
+		}
+		&__text {
+			margin-left: 0;
+			padding-right: 0;
+		}
+	}
+}
