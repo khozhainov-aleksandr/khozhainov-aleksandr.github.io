@@ -1,0 +1,20 @@
+@media screen and (max-width:768px) {
+	.pageup {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+
+@media screen and (max-width:425px) {
+	.pageup {
+		bottom: 10px;
+		right: 10px;
+	}
+}
+
+@media screen and (max-width:320px) {
+	.pageup {
+		bottom: 5px;
+		right: 5px;
+	}
+}
