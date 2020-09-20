@@ -1,5 +1,22 @@
 'use strict';
 
+// SECTION: Progress Bar.
+const progress = document.querySelector('.progress');
+
+window.addEventListener('scroll', progressBar);
+
+function progressBar(event) {
+  let windowScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  let windowHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let percent = (windowScroll / windowHeight) * 100;
+
+  progress.style.width = percent + '%';
+}
+
+// SECTION: Hamburger Menu.
 const hamburgerEl = document.querySelector('.hamburger');
 const menuEl = document.querySelector('.menu');
 const closeMenuEl = document.querySelector('.menu__close');
@@ -12,8 +29,7 @@ closeMenuEl.addEventListener('click', () => {
   menuEl.classList.remove('active');
 });
 
-// ----------
-
+// SECTION: Experience Timer.
 const startTime = '2019-07-15';
 
 function getTimerRemaining(beginningTime) {
@@ -72,13 +88,10 @@ function setClock(selector, beginningTime) {
 
 setClock('.timer', startTime);
 
-// ----------
-
+// SECTION: Skills Ratings.
 const counters = document.querySelectorAll('.skills__ratings-counter');
 const lines = document.querySelectorAll('.skills__ratings-line span');
 
 counters.forEach((item, i) => {
   lines[i].style.width = item.innerHTML;
 });
-
-// ----------
