@@ -1,0 +1,18 @@
+@media screen and (max-width:768px) {
+	.certificates {
+		.container {
+			.certificates__wrapper {
+				margin-top: 80px;
+				margin-bottom: 60px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:425px) {
+	.modal {
+		&__wrapper {
+			padding-top: 80px;
+		}
+	}
+}
