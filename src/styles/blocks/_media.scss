@@ -1,0 +1,364 @@
+// SECTION: Display width - 1270px
+
+@media (max-width: 1270px) {
+  .sidepanel {
+    display: none;
+  }
+}
+
+// SECTION: Display width - 1200px
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .about {
+    &__wrapper {
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+    }
+    &__skills {
+      column-gap: 20px;
+      grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+      &-item {
+        grid-template-columns: 40px 195px;
+        column-gap: 15px;
+      }
+    }
+  }
+
+  .skills {
+    &__items {
+      grid-template-columns: repeat(auto-fit, 270px);
+      justify-content: space-between;
+    }
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 350px);
+      grid-auto-rows: minmax(70px, auto);
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+  }
+
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: space-around;
+      row-gap: 35px;
+      .horizonal,
+      .vertical {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+  }
+
+  .contacts {
+    &__wrapper {
+      padding: 0;
+      grid-template-columns: 400px 520px;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 250px);
+    }
+  }
+}
+
+// SECTION: Display width - 992px
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .title {
+    &_fz36 {
+      font-size: 30px;
+      line-height: 42px;
+      margin-top: 26px;
+    }
+  }
+
+  .menu {
+    &__block {
+      left: 65%;
+      width: 350px;
+    }
+  }
+
+  .divider {
+    margin: 15px auto 0 auto;
+  }
+
+  .about {
+    &__wrapper {
+      grid-template-columns: 300px 380px;
+    }
+    &__skills {
+      grid-template-columns: 380px;
+      grid-auto-rows: minmax(115px, auto);
+      &-item {
+        grid-template-columns: 40px 320px;
+        column-gap: 20px;
+      }
+    }
+  }
+
+  .experience-timer {
+    &__timer {
+      .timer__block {
+        &:nth-child(4) {
+          display: none;
+        }
+        &:nth-child(5) {
+          display: none;
+        }
+        &:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .skills {
+    &__items {
+      padding: 0 20px;
+    }
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 320px);
+      justify-content: space-between;
+      padding: 0;
+      column-gap: 0;
+      &-line {
+        width: 100%;
+      }
+    }
+  }
+
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 300px 400px;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 195px);
+    }
+    &__btn {
+      padding: 8px 25px;
+      line-height: 16px;
+    }
+  }
+}
+
+// SECTION: Display width - 768px
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .title {
+    &_fz48 {
+      font-size: 28px;
+    }
+  }
+
+  .menu {
+    &__block {
+      left: 55%;
+      width: 350px;
+    }
+  }
+
+  .promo {
+    &__title {
+      line-height: 60px;
+      width: 300px;
+    }
+  }
+
+  .about {
+    padding-top: 40px;
+    &__wrapper {
+      grid-template: 400px auto auto / 1fr;
+    }
+    &__photo {
+      grid-row: unset;
+    }
+    &__skills {
+      grid-template-columns: repeat(2, 260px);
+      &-item {
+        grid-template-columns: 40px 200px;
+        column-gap: 20px;
+      }
+    }
+  }
+
+  .skills {
+    padding-top: 40px;
+    &__items {
+      padding: 0;
+      justify-content: center;
+      gap: 20px;
+    }
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 320px);
+      grid-auto-rows: minmax(70px, auto);
+      justify-content: center;
+      margin-top: 80px;
+      &-line {
+        width: 100%;
+      }
+    }
+  }
+
+  .portfolio {
+    padding-top: 80px;
+  }
+
+  .contacts {
+    padding-top: 80px;
+    &__photo {
+      display: none;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 250px);
+    }
+  }
+}
+
+// SECTION: Display width - 576px
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .title {
+    &_fz48 {
+      font-size: 26px;
+    }
+    &_fz36 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .hamburger {
+    left: 20px;
+  }
+
+  .menu {
+    &__block {
+      left: 55%;
+      width: 260px;
+      padding-left: 20px;
+    }
+  }
+
+  .promo {
+    background: url('../images/pictures/background/main_background.jpg') no-repeat 57% / cover;
+    &__btns {
+      margin-top: 30px;
+    }
+  }
+
+  .about {
+    &__wrapper {
+      grid-template: 340px auto auto / 1fr;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .experience-timer {
+    &__timer {
+      width: 80%;
+      .timer__block {
+        width: 90px;
+        height: 114px;
+
+        span {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+
+  .skills {
+    &__items {
+      margin-top: 40px;
+    }
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 300px);
+    }
+  }
+
+  .contacts {
+    padding-bottom: 50px;
+    &__form {
+      grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+    }
+    &__textarea {
+      grid-column: unset;
+      width: 100%;
+    }
+    &__triggers {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      column-gap: unset;
+      row-gap: 20px;
+    }
+    &__btn {
+      order: 2;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+    &__policy {
+      width: 190px;
+      margin: 0 auto;
+      line-height: 18px;
+    }
+  }
+}
+
+// SECTION: Display width - 425px
+
+@media (max-width: 425px) {
+  .menu {
+    &__block {
+      left: 42%;
+    }
+  }
+  .experience-timer {
+    &__timer {
+      width: 95%;
+    }
+  }
+}
+
+// SECTION: Display width - 375px
+
+@media (max-width: 375px) {
+  .menu {
+    &__block {
+      left: 34%;
+    }
+  }
+}
+
+// SECTION: Display width - 320px
+
+@media (max-width: 320px) {
+  .menu {
+    &__block {
+      left: 22%;
+    }
+  }
+}

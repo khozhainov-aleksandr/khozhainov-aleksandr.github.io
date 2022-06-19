@@ -1,0 +1,39 @@
+@media screen and (max-width:1200px) {
+	.education {
+    &__wrapper {
+      padding: 40px 20px 0 20px;
+      column-gap: 80px;
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+	.education {
+    &__wrapper {
+      column-gap: 60px;
+      grid-template-columns: repeat(2, 320px);
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+	.education {
+    padding-top: 40px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      column-gap: 60px;
+      row-gap: 40px;
+    }
+  }
+}
+
+@media screen and (max-width:576px) {
+	.education {
+		padding-top: 100px;
+
+		&__wrapper {
+      padding: 40px 5px 0 5px;
+    }
+	}
+}
+

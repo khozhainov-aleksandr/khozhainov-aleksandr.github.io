@@ -1,0 +1,25 @@
+// @include before_circle;
+@mixin before_circle {
+  &:before {
+    position: absolute;
+    top: -25%;
+    left: -10px;
+    content: '';
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: var(--main-color);
+    z-index: -1;
+  }
+}
+
+// @include hover_effect;
+@mixin hover_effect {
+	transition: all 0.5s;
+
+	&:hover {
+		color: #000000;
+		text-decoration: none;
+		box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+	}
+}
