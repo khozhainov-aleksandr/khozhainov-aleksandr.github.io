@@ -70,6 +70,7 @@ function setClock(selector, beginningTime) {
   const minutes = timer.querySelector('#minutes');
   const seconds = timer.querySelector('#seconds');
 
+  // eslint-disable-next-line
   const timeInterval = setInterval(upDateClock, 1000);
 
   upDateClock();
@@ -135,7 +136,9 @@ const modalTimerId = setTimeout(openModal, 60000); // After 60 seconds
 window.addEventListener('scroll', showModalByScroll);
 
 function showModalByScroll() {
-  if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+  if ((window.pageYOffset + document.documentElement.clientHeight)
+    >= document.documentElement.scrollHeight
+  ) {
     openModal();
     window.removeEventListener('scroll', showModalByScroll);
   }
