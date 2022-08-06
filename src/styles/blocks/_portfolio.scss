@@ -1,6 +1,7 @@
 .portfolio {
   padding-top: 120px;
 
+  .Rootz,
   .EcoCosmetics,
   .MyBiKE,
   .Uber,
@@ -8,7 +9,7 @@
   .FirstPortfolio,
   .ActiveBox,
   .Netclicks {
-    padding: 1rem  0;
+    padding: 0.4rem  0;
   }
 
   &__wrapper {
@@ -17,14 +18,22 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(4, 280px);
+    grid-template-rows: repeat(5, 280px);
     gap: 0 20px;
 
     grid-template-areas:
+      'Rootz            Rootz       Rootz'
       'EcoCosmetics     MyBiKE      MyBiKE'
       'EcoCosmetics     Uber        Uber'
       'RunSmart         RunSmart    Netclicks'
       'FirstPortfolio   ActiveBox   Netclicks';
+  }
+
+  .Rootz {
+    grid-area: Rootz;
+    & img {
+      object-position: 0px -20px;
+    }
   }
 
   .EcoCosmetics {
@@ -58,7 +67,7 @@
   .FirstPortfolio {
     grid-area: FirstPortfolio;
     & img {
-      object-position: 0px -100px;
+      object-position: 0px -86px;
     }
   }
 
